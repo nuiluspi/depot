@@ -13,7 +13,7 @@ two:
   price: 9.99
 
 mine:
-  title: Programming Ruby 1.9
+  title: My Book Title
   description: yyy
   image_url: zzz.jpg
   price: 9.99
