@@ -20,7 +20,7 @@
       <div id="timeHeader">
 	Page loaded at:<br>
 	<div id="time">
-        <%= Time.now.strftime("%m/%d/%Y") %><br>
+        <%= Time.now.strftime("%d/%m/%Y") %><br>
           <%= Time.now.strftime("%H:%M:%S") %>
 	</div>
       </div>
