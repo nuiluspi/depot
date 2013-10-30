@@ -168,3 +168,8 @@
 #cart {
   color: white;
 }
+
+.carttable td {
+  padding-left: 5px;
+}
+

@@ -164,3 +164,12 @@
 #store .entry form, #store .entry form div {
   display: inline;
 }
+
+#cart {
+  color: white;
+}
+
+.carttable table td {
+  padding-left: 5px;
+}
+
