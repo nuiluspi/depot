@@ -1,0 +1,6 @@
+$('#cart').html '<%= j render(@cart) %>'
+
+$('#current_item').html '<%= visual_effect (:highlight,
+				  "current_item",
+                                  :startcolor => "#88ff88",
+                                  :endcolor => "#114411") %>'
