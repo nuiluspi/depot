@@ -18,7 +18,9 @@
       <a href="http://www..../news">News</a><br />
       <a href="http://www..../contact">Contact</a><br /><br><br><br><br><br>
       <div id="cart">
-	<%= render @cart %>
+	<% if @cart %>
+  	  <%= render @cart %>
+	<% end %>
       </div><br><br>
       <br>
       <div id="timeHeader">
@@ -30,6 +32,8 @@
       </div>
     </div>
     <div id="main">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </div>

@@ -1,11 +1,18 @@
 source 'https://rubygems.org'
 
+ruby '1.8.7'
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# We used sqlite3 for devel, but heroku uses postgresql
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 gem 'json'
 
@@ -37,3 +44,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+
+# custom
+gem 'devise', '~> 2.2.8'
+gem 'rails_12factor'
